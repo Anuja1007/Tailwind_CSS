@@ -1,0 +1,26 @@
+Create a Basic Grid Layout Instructions: Create a div container to hold the
+grid. Inside the container, add four child div elements. Use Tailwind CSS's grid
+utilities to create a 2x2 grid layout. Add a unique background color to each div
+to differentiate the grid cells. Include the Tailwind CSS CDN link inside the
+head: link
+href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+rel="stylesheet"
+
+<!doctype html>
+<html>
+  <head>
+    <title>2x2 Grid Layout</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="p-10 bg-gray-100">
+    <div class="grid grid-cols-2 grid-rows-2 gap-4">
+      <div class="bg-red-400 p-6 text-white text-center">Box 1</div>
+      <div class="bg-blue-400 p-6 text-white text-center">Box 2</div>
+      <div class="bg-green-400 p-6 text-white text-center">Box 3</div>
+      <div class="bg-yellow-400 p-6 text-black text-center">Box 4</div>
+    </div>
+  </body>
+</html>

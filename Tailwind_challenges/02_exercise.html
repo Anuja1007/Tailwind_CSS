@@ -1,0 +1,34 @@
+Center a Div Using Flexbox Instructions: Create a div (parent container) and
+give it the id="parent". This div should contain another div (child container)
+with id="child". Use Tailwind CSS's flexbox utilities to center the child div
+inside the parent both vertically and horizontally within the viewport. The
+content inside the child div should consist of: A heading h1 with the class
+text-2xl. A paragraph p explaining that the div is centered. Add the following
+Tailwind CSS CDN link to the head section: link
+href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+rel="stylesheet" Ensure that both the parent and child divs have the specified
+id attributes for the tests to pass.
+
+<!doctype html>
+<html>
+  <head>
+    <title>Center Div with Flexbox</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div
+      id="parent"
+      class="flex items-center justify-center h-screen bg-gray-100"
+    >
+      <div id="child" class="bg-white p-6 rounded shadow">
+        <h1 class="text-2xl">Centered Div</h1>
+        <p>
+          This div is centered both vertically and horizontally using Flexbox.
+        </p>
+      </div>
+    </div>
+  </body>
+</html>
